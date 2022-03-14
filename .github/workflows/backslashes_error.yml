@@ -8,4 +8,7 @@ jobs:
     steps:
       - name: bash
         shell: bash
+        run: bash
+      - name: ls
+        shell: bash
         run: ls
