@@ -6,7 +6,6 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - run: ls
-        shell: bash
-      - run: echo "Hello world!"
+      - name: bash
+        run: ls
         shell: bash
