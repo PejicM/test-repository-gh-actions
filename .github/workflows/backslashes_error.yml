@@ -6,9 +6,9 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - name: hello
+      - name: working-dir
         shell: bash
-        run: echo "Hello world!"
+        run: echo $PWD
       - name: make-dir
         shell: bash
         run: mkdir test_folder
