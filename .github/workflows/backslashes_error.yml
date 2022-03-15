@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: working-dir
         shell: bash
-        run: echo $PWD
+        run: echo "$PWD"
       - name: make-dir
         shell: bash
         run: mkdir test_folder
