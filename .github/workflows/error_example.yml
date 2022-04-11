@@ -8,4 +8,5 @@ jobs:
     
     steps:
     - name: STDERR redirect test
+      shell: bash
       run: $E = $(Write-Error "oops" 2>&1)
