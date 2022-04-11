@@ -1,0 +1,11 @@
+name: Stupid error example
+on:
+  workflow_dispatch:
+  
+jobs:
+  first_job:
+    runs-on: self-hosted
+    
+    steps:
+    - name: STDERR redirect test
+      run: $E = $(Write-Error "oops" 2>&1)
